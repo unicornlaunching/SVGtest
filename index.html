@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<script>
+  animation: 2s linear infinite svg-animation;
+  max-width: 100px;
+}
+
+// SVG animation.
+@keyframes svg-animation {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg)
+  }
+}
+
+// Circle styles.
+circle {
+  animation: 1.4s ease-in-out infinite both circle-animation;
+  display: block;
+  fill: transparent;
+  stroke-linecap: round;
+  stroke-dasharray: 283;
+  stroke-dashoffset: 280;
+  stroke-width: 10px;
+  transform-origin: 50% 50%;
+}
+
+// Circle animation.
+@keyframes circle-animation {
+  0%,
+  25% {
+    stroke-dashoffset: 280;
+    transform: rotate(0);
+  }
+  
+  50%,
+  75% {
+    stroke-dashoffset: 75;
+    transform: rotate(45deg);
+  }
+  
+  100% {
+    stroke-dashoffset: 280;
+    transform: rotate(360deg);
+  }
+}
+</script>
+
+<body>
+
+<h1>My first SVG</h1>
+
+<svg class="circle-svg circle-svg--stroked circle-svg--full-rotation">
+  <circle class="circle-svg__circle circle-svg__circle--stroked circle-svg__circle--production circle-svg__circle--stroke-length circle-svg__circle--dash-offset-animated-basic" cx="50" cy="50" r="45"></circle>
+</svg>
+
+
+<svg width="500" height="500">
+
+
+
+
+
+<circle cx="250" cy="250" r="200" stroke="green" stroke-width="4" fill="yellow" stroke-dasharray="1" />
+c
+
+<circle cx="150" cy="80" r="17" stroke="green" stroke-width="4" fill="black"  stroke-dasharray="1" />
+<circle cx="350" cy="80" r="17" stroke="green" stroke-width="4" fill="black" />
+
+
+<circle cx="70" cy="150" r="17" stroke="green" stroke-width="4" fill="black"  stroke-dasharray="1" />
+<circle cx="425" cy="150" r="17" stroke="green" stroke-width="4" fill="black" />
+
+
+<circle cx="350" cy="420" r="17" stroke="green" stroke-width="4" fill="black"  stroke-dasharray="1" />
+<circle cx="150" cy="420" r="17" stroke="green" stroke-width="4" fill="black" />
+
+
+<circle cx="50" cy="250" r="17" stroke="green" stroke-width="4" fill="black"  stroke-dasharray="1" />
+<circle cx="450" cy="250" r="17" stroke="green" stroke-width="4" fill="black" />
+
+<circle cx="250" cy="50" r="17" stroke="green" stroke-width="4" fill="black"  stroke-dasharray="1" />
+<circle cx="250" cy="450" r="17" stroke="green" stroke-width="4" fill="black" />
+
+<circle cx="70" cy="350" r="17" stroke="green" stroke-width="4" fill="black"  stroke-dasharray="1" />
+<circle cx="425" cy="350" r="17" stroke="green" stroke-width="4" fill="black" />
+
+
+
+
+
+   Sorry, your browser does not support inline SVG.
+</svg> 
+ 
+ 
+</body>
+</html>
